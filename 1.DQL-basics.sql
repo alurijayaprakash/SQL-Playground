@@ -147,6 +147,14 @@ where c.phone  is not null;
 select * from customers c 
 where c.age != 20 limit 10
 
+-- Alternative - Every one that is not 20
+SELECT * FROM customers c 
+WHERE NOT age = 20;
+
+-- Alternative - Every one that is not 20
+SELECT * FROM customers c
+WHERE c.age <> 20;
+
 -- Same Query using IS
 select * from customers c 
 where c.age = 20 is false limit 10
